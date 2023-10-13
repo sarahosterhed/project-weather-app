@@ -110,18 +110,18 @@ Read the [endpoint documentation](https://openweathermap.org/forecast5 "endpoint
 Style it to look like one of the provided designs.
 
 ## Requirements
-- You should fetch data from the API using `fetch()` in JavaScript
-- All data in the sketch above should be present and fetched from the API
-- The presentation of the data should be in the specified format.
-- The page should work on mobile (mobile first!), tablet and desktop (Be responsive)
-- Complete Step 1-2 together, and step 3 in branches
+- You should fetch data from the API using `fetch()` in JavaScript - DONE
+- All data in the sketch above should be present and fetched from the API - DONE
+- The presentation of the data should be in the specified format. - 
+- The page should work on mobile (mobile first!), tablet and desktop (Be responsive) - Joona
+- Complete Step 1-2 together, and step 3 in branches - DONE
 - Follow the guidelines on [how to write good code](https://www.notion.so/Guidelines-for-how-to-write-good-code-59abdd4307a24f5ca7914d566326f4df?pvs=4 "how to write good code")
 
 ## Stretch goals
 So you’ve completed the requirements? Great job! Make sure you've committed and pushed a version of your project before starting on the stretch goals. Remember that the stretch goals are optional.
 
 ### Intermediate Stretch Goals
-**Feature: Styling warm/cold 🌞❄️**  
+**Feature: Styling warm/cold 🌞❄️** - Sarah
 Change the colours of the page based on the weather. If the weather is warm – use warm colours. If the weather is colder, use cold colours. If you really want to push your CSS muscles you can even make a background gradient.
 
 Another alternative is to include visual indicators for the type of weather, cloudy/sunny/rainy/etc.
@@ -136,5 +136,5 @@ Use the [Geolocation API](https://www.w3schools.com/html/html5_geolocation.asp "
 **Feature: Add more data 💽**  
 Explore the API and use another endpoint of the Weather API to include supplementary information.
 
-**Feature: CSS Animations**  
+**Feature: CSS Animations**  - Sarah
 Add some CSS animations to your app, e.g. pulsating sun/raindrops.
