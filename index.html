@@ -9,22 +9,27 @@
 </head>
 
 <body>
-    <header>
+   
+    <section class="container">
+        <section id="containerMain" class="main">
+            <nav><img src="design/design1/assets/menu.svg"></nav>
+            <h1 id="currentTemperature"></h1>
+            <h2 id="currentCity"></h2>
+            <p id="currentWeatherType"></p>
+            <img src="design/design1/assets/Group 13.png">
+            <section id ="sunTime" class="containerTime">
+            </section>
+        </section>
+            <div class="action-button"><img src="design/design1/assets/arrow-right.svg"></div>
+        <section id="containerSub" class="subMain">
+            <div id="weekdays"></div>
+            <div id="weatherIcons"></div>
+            <div id="temperatures"></div>
+        </section>
+    </section> 
 
-    </header>
-    <section id="containerMain">
-        <h1 id="currentTemperature"></h1>
-        <h2 id="currentCity"></h2>
-        <p id="currentWeatherType"></p>
-    </section>
-    <section id="sunTime" class="containerTime">
-    </section>
-    <section id="containerSub">
-        <div id="weekdays"></div>
-        <div id="weatherIcons"></div>
-        <div id="temperatures"></div>
-    </section>
 
-    <!-- <script src="./script.js"></script> -->
+
+    <script src="./script.js"></script>
     <script src="./sub.js"></script>
 </body>
