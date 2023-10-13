@@ -28,7 +28,7 @@ const fetchWeatherData = () => {
                 const hours = dateTime.getHours();
                 return hours === 12;
             });
-            // console.log("dayTime", dayTime)
+            console.log("dayTime", dayTime)
 
             // Filter the weatherdata to display data only at 00:00
             const nightTime = weatherData.list.filter((data) => {
@@ -36,7 +36,7 @@ const fetchWeatherData = () => {
                 const hours = dateTime.getHours();
                 return hours === 0;
             });
-            // console.log("nightTime", nightTime)
+            console.log("nightTime", nightTime)
 
             /*--TEMPERATURES--*/
             //Get the temperatures in the day and night with one decimal
