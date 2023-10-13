@@ -136,7 +136,7 @@ const fetchForecast = () => {
         })
         .catch((error) => {
             console.log("Caught Error", error);
-            containerMain.innerHTML = "<h1>Failed to load, please try again.</h1>"
+            containerMain.innerHTML = "<p>Failed to load, please try again.</p>"
         })
 }
 
