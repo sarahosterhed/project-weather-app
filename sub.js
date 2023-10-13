@@ -13,7 +13,7 @@ const fetchWeatherData = () => {
             return response.json()
         })
         .then((weatherData) => {
-            // console.log("console", weatherData)
+            console.log("console", weatherData)
 
             // Get today's day
             const currentDate = new Date();
