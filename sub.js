@@ -5,10 +5,10 @@ const weatherIcon = document.getElementById("image");
 const temperatures = document.getElementById("temperatures");
 
 // API URL
-const url = "https://api.openweathermap.org/data/2.5/forecast?q=Stockholm,Sweden&units=metric&APPID=903ddcd89f258c2d7a183180e626b811";
+const urlWeatherData = "https://api.openweathermap.org/data/2.5/forecast?q=Stockholm,Sweden&units=metric&APPID=903ddcd89f258c2d7a183180e626b811";
 
-const fetchWeatherData = () => {
-    fetch(url)
+const fetchForecast = () => {
+    fetch(urlWeatherData)
         .then((response) => {
             return response.json()
         })
@@ -140,4 +140,4 @@ const fetchWeatherData = () => {
         })
 }
 
-fetchWeatherData();
+fetchForecast();
