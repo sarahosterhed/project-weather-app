@@ -17,7 +17,7 @@ const fetchForecast = () => {
 
             // Get today's day
             const currentDate = new Date();
-            const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            const weekday = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
             const currentDay = weekday[currentDate.getDay()];
             // console.log("Today is:", currentDay)
 
