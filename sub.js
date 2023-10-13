@@ -87,35 +87,35 @@ const fetchForecast = () => {
             upcomingWeather.forEach((weatherType) => {
                 let addImage = document.createElement("img");
                 if (weatherType === 800) {
-                    addImage.src = "./img/sun.png";
+                    addImage.src = "./design/design1/img/sun.png";
                     addImage.alt = "sun";
                     weatherIcons.appendChild(addImage);
                 } else if (weatherType >= 801 && weatherType <= 802) {
-                    addImage.src = "./img/sun-cloud.png";
+                    addImage.src = "./design/design1/img/sun-cloud.png";
                     addImage.alt = "sun and clouds";
                     weatherIcons.appendChild(addImage);
                 } else if (weatherType >= 803 && weatherType <= 804) {
-                    addImage.src = "./img/cloud.png";
+                    addImage.src = "./design/design1/img/cloud.png";
                     addImage.alt = "clouds";
                     weatherIcons.appendChild(addImage);
                 } else if (weatherType >= 701 && weatherType <= 781) {
-                    addImage.src = "./img/mist.png";
+                    addImage.src = "./design/design1/img/mist.png";
                     addImage.alt = "mist";
                     weatherIcons.appendChild(addImage);
                 } else if (weatherType >= 600 && weatherType <= 622) {
-                    addImage.src = "./img/snow.png";
+                    addImage.src = "./design/design1/img/snow.png";
                     addImage.alt = "snow";
                     weatherIcons.appendChild(addImage);
                 } else if (weatherType >= 500 && weatherType <= 531) {
-                    addImage.src = "./img/rain.png";
+                    addImage.src = "./design/design1/img/rain.png";
                     addImage.alt = "rain";
                     weatherIcons.appendChild(addImage);
                 } else if (weatherType >= 300 && weatherType <= 321) {
-                    addImage.src = "./img/light-rain.png";
+                    addImage.src = "./design/design1/img/light-rain.png";
                     addImage.alt = "drizzle";
                     weatherIcons.appendChild(addImage);
                 } else if (weatherType >= 200 && weatherType <= 232) {
-                    addImage.src = "./img/thunder.png";
+                    addImage.src = "./design/design1/img/thunder.png";
                     addImage.alt = "thunderstorm";
                     weatherIcons.appendChild(addImage);
                 }
