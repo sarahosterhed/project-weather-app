@@ -65,7 +65,6 @@ const fetchForecast = () => {
             })
             //Flatten the array and create a new one
             const upcomingWeather = dailyWeather.flat();
-            // console.log(upcomingWeather)
 
 
             /*--DISPLAY WEATHER DATA IN HTML--*/

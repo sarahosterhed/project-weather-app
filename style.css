@@ -44,14 +44,59 @@ nav {
     margin-bottom: 70px;
 }
 
-.main>img {
+/* .main>img {
     position: absolute;
     top: 64px;
     right: 26px;
     height: 152px;
     width: auto;
     z-index: -1;
+} */
+
+.weather-icon {
+    position: absolute;
+    max-width: 200px;
+    top: 64px;
+    right: 26px;
+    width: 200px;
+    height: auto;
 }
+
+.icon {
+    max-width: inherit;
+    position: absolute;
+}
+
+.sun {
+    width: 180px;
+    right: 0;
+    animation: spin 6s infinite ease;
+}
+
+.big-cloud {
+    width: 180px;
+    right: 0;
+    /* animation: hover 8s infinite ease; */
+}
+
+.small-cloud {
+    width: 140px;
+    top: 30px;
+    animation: hover 8s reverse infinite ease;
+}
+
+.sun-cloud {
+    width: 180px;
+    top: 30px;
+    right: 0;
+}
+
+.sun-small {
+    width: 120px;
+    right: 0;
+    animation: spin 6s infinite ease;
+}
+
 
 .containerTime {
     display: flex;
@@ -81,7 +126,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-self:stretch;
+    align-self: stretch;
     padding: 60px 30px 30px 30px;
 }
 
@@ -92,7 +137,7 @@ nav {
 }
 
 .subRow {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 20px;
@@ -114,33 +159,85 @@ nav {
 /* media queries */
 
 @media only screen and (min-width: 600px) {
+
     /* For tablet: */
     .main {
-      padding: 30px 50px 30px 50px;
+        padding: 30px 50px 30px 50px;
     }
+
     .subMain {
         padding: 60px 50px 30px 50px;
     }
+
     .action-button {
         right: 50px;
     }
+
     .main>img {
         right: 50px;
     }
-  }
+}
 
-  @media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1000px) {
+
     /* For desktop: */
     .main {
-      padding: 30px 300px 30px 300px;
+        padding: 30px 300px 30px 300px;
     }
+
     .subMain {
         padding: 60px 300px 30px 300px;
     }
+
     .action-button {
         right: 300px;
     }
+
     .main>img {
         right: 300px;
     }
-  }
+}
+
+@keyframes hover {
+    0% {
+        transform: translateX(0px);
+    }
+
+    25% {
+        transform: translateY(2px);
+    }
+
+    50% {
+        transform: translateX(-5px);
+    }
+
+    75% {
+        transform: translateY(-2px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0) scale(1);
+    }
+
+    25% {
+        transform: rotate(2deg) scale(1.05);
+    }
+
+    50% {
+        transform: rotate(0) scale(1);
+    }
+
+    75% {
+        transform: rotate(-2deg) scale(1.05);
+    }
+
+    100% {
+        transform: rotate(0) scale(1);
+    }
+}
